@@ -1,7 +1,7 @@
 import io
 import os.path as op
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 here = op.abspath(op.dirname(__file__))
 
@@ -11,13 +11,13 @@ with io.open(op.join(here, 'README.md'), mode='rt', encoding='utf-8') as f:
 
 setup(
     name='text_classifier',
-    version='0.0.3',
+    version='0.0.4',
     description='text classifier',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/kopylovvlad/text_classifier',
     author='Vladislav Kopylov',
     author_email='kopylov.vlad@gmail.com',
-    packages=['classifier'],
+    packages=find_packages(),
     python_requires='>=3.5',
 )
