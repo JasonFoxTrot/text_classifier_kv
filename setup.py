@@ -11,7 +11,7 @@ with io.open(op.join(here, 'README.md'), mode='rt', encoding='utf-8') as f:
 
 setup(
     name='text_classifier',
-    version='0.0.4',
+    version='0.0.5',
     description='text classifier',
     long_description=long_description,
     long_description_content_type='text/markdown',
