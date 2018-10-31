@@ -10,8 +10,8 @@ with io.open(op.join(here, 'README.md'), mode='rt', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='classifier',
-    version='0.0.2',
+    name='text_classifier',
+    version='0.0.3',
     description='text classifier',
     long_description=long_description,
     long_description_content_type='text/markdown',
