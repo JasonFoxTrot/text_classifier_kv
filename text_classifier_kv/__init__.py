@@ -48,8 +48,7 @@ def generate_text_vector(
     for text in text_list:
         for word, count in getfeatures(text).items():
             apcount.setdefault(word, 0)
-            if count > 1:
-                apcount[word] += 1
+            apcount[word] += 1
 
     # Dict of uniq words for all texts
     # all words are between max and mix frequency
